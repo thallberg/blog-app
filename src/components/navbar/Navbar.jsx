@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './NavbarStyle.css';
-import UserService from '../../services/Userservice.js';
+import UserService from '../../services/UserService.js';
 
 export default function Navbar() {
     const [user, setUser] = useState(UserService.isAuth());

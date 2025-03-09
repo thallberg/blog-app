@@ -82,4 +82,3 @@ export const BlogService = {
     }
 };
 
-export default BlogService;
