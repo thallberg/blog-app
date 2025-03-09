@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import './NavbarStyle.css';
-import UserService from '../../services/Userservice';
+import UserService from '../../services/Userservice.js';
 
 export default function Navbar() {
     const [user, setUser] = useState(UserService.isAuth());
@@ -18,7 +17,7 @@ export default function Navbar() {
 
     const handleLogout = () => {
         UserService.logout();
-        setUser(false); // Uppdatera state
+        setUser(false); 
         window.location.href = "/login";
     };
 
