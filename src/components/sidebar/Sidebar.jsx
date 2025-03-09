@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './SidebarStyle.css';
 import aboutimage from '../../assets/sidebar/aboutme.webp';
-import UserService from '../../services/Userservice';
+import UserService from '../../services/UserService';
 
 export default function Sidebar({ isSettingsPage, user }) {
   const loggedInUser = UserService.getUser();

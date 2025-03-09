@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './SinglePostStyle.css';
 import { useParams, useNavigate } from 'react-router-dom';
 import blogimg from '../../assets/Posts/blogimg.webp';
-import { BlogService } from '../../services/Blogservice';
-import UserService from '../../services/Userservice';
+import UserService from '../../services/UserService';
+import BlogService from '../../services/BlogService';
+
 
 export default function SinglePost() {
   const { postId } = useParams();

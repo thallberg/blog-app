@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './PostStyle.css';
 import blogimg from '../../assets/Posts/blogimg.webp';
-import { BlogService } from '../../services/Blogservice';
+import { BlogService } from '../../services/BlogService';
 
 
 export default function Post() {

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './SettingsStyle.css'
 import Sidebar from '../../components/sidebar/Sidebar'
 import profileimage from '../../assets/navbar/profile1.png'
-import UserService from '../../services/Userservice';
+import UserService from '../../services/UserService';
 
 export default function Settings() {
 

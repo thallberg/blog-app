@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './WriteStyle.css';
-import UserService from '../../services/Userservice';
+import UserService from '../../services/UserService';
 import { useNavigate } from 'react-router-dom';
 
 export default function Write() {

@@ -1,9 +1,8 @@
 import React from 'react'
 import './LoginStyle.css'
 import { Link } from 'react-router-dom'
-
 import accountImg from '../../assets/login/account.webp';
-import UserService from '../../services/Userservice';
+import UserService from '../../services/UserService';
 
 export default function Login() {
 

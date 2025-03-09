@@ -1,9 +1,10 @@
 import React from 'react'
 
 import './RegisterStyle.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import accountImg from '../../assets/login/register.webp';
-import UserService from '../../services/Userservice';
+import UserService from '../../services/UserService';
+
 
 export default function Register() {
 const navigate = useNavigate();
