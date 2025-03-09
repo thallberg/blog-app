@@ -1,0 +1,78 @@
+.posts-container {
+    display: flex;
+    flex-wrap: wrap; /* Möjliggör radbrytning av inlägg */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.post {
+    width: 40%;
+    max-width: 650px;
+    margin: 0 15px 20px 15px;
+}
+
+.post:hover {
+    transform: scale(1.05); /* Gör inlägget lite större när man hovrar */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Skugga för att ge djup */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smidig övergång */
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postCat {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 12px;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.post-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.post-date {
+    font-family: 'Lora', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #999;
+}
+
+.post-des {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    color: #444;
+    line-height: 18px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+ @media screen and (max-width: 768px) {
+    .post {
+        width: 80%;
+        margin: 0 15px 20px 15px;
+    }
+
+ }

@@ -1,0 +1,47 @@
+.header {
+    margin-top: 1rem;
+}
+
+.header-content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lora', serif;
+    color: #444;
+}
+
+.header-title {
+position: absolute;
+top: 3%;
+font-size: 8rem;
+}
+
+.header-titlelarge {
+ position: absolute;
+ top: 6%;
+ font-size: 8rem;
+}
+
+.header-image {
+width: 100%;
+height: 450px;
+margin-top: 40px;
+object-fit: cover;
+}
+
+@media screen and (max-width: 525px) {
+  
+ 
+    .header-title {
+    top: 6%;
+    font-size: 4rem;
+    }
+    
+    .header-image {
+    width: 100%;
+    height: 250px;
+    margin-top: 40px;
+    object-fit: cover;
+    }
+
+}

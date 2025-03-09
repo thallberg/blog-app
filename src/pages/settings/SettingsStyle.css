@@ -1,0 +1,185 @@
+.settings {
+    display: flex;
+}
+
+.settingswrapper {
+    flex: 9;
+    padding: 20px;
+}
+
+.settingstitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingsupdate-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: lightcoral;
+}
+
+.settingsdelete-title {
+    font-size: 12px;
+    cursor: pointer;
+    color: red;
+}
+
+.settingsform {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+.settingsform>input:focus {
+    border-bottom: 2px solid teal;
+    outline: none;
+    background-color: #eef7f7;
+    box-shadow: 0 0 10px rgba(0, 128, 128, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.settingsprofile-picture {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.settingsprofile-picture>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.settingsprofileicon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.settingsform>label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.settingsform>input {
+    color: gray;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+
+
+.settingssubmit {
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.settingssubmit:hover {
+    background-color: rgb(0, 112, 112);
+}
+
+
+.password-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-container input {
+    color: gray;
+    margin-right: 10px;
+    height: 30px;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+.password-container input:focus {
+    border-bottom: 2px solid teal;
+    outline: none;
+    background-color: #eef7f7;
+    box-shadow: 0 0 10px rgba(0, 128, 128, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .settings {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .settingsprofile-picture>img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .settingsprofileicon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .settingsform {
+        width: 60%;
+        margin: auto;
+    }
+
+    .settingssubmit {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+
+    .settingsform {
+        width: 90%;
+        margin: auto;
+    }
+
+    .settingssubmit {
+        width: 100%;
+    }
+}

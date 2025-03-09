@@ -1,0 +1,55 @@
+.Register {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Registertitle {
+    font-size: 50px;
+}
+
+.Registerform {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Registerform > label {
+    margin: 10px 0;
+
+}
+
+.Registerinput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+
+}
+
+.Registerbtn {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.registerloginbtn {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 425px) {
+  
+}
