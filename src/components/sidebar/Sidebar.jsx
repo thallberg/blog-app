@@ -99,11 +99,11 @@ export default function Sidebar({ isSettingsPage, user }) {
         </span>
       )}
 
-      {isEditing && saveChanges && (
+      {/* {isEditing && saveChanges && (
         <button className="save-updates-btn" onClick={handleSaveUpdates}>
           Save updates
         </button>
-      )}
+      )} */}
     </div>
   );
 }

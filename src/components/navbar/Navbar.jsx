@@ -18,7 +18,7 @@ export default function Navbar() {
     const handleLogout = () => {
         UserService.logout();
         setUser(false); 
-        window.location.href = "/login";
+        window.location.href = "/";
     };
 
     return (
@@ -48,7 +48,7 @@ export default function Navbar() {
                     </li>
                    )}
                     {user && (
-                        <li className='navbar-listitem' onClick={handleLogout} style={{ cursor: "pointer" }}>
+                        <li className='navbar-listitem' onClick={handleLogout}>
                             LOGOUT
                         </li>
                     )}

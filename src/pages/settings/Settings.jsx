@@ -86,7 +86,7 @@ export default function Settings() {
                     <label>Password</label>
                     <div className="password-container">
                         <input
-                            type={showPassword ? "text" : "password"} // Dynamiskt ändra mellan text och password
+                            type={showPassword ? "text" : "password"}
                             name="password"
                             value={userData.password}
                             onChange={handleChange}
